@@ -74,3 +74,68 @@ Below is the list of technologies used in this project and their purpose within 
 - **Purpose**: Tools for documenting and testing APIs, allowing developers to understand and interact with endpoints more easily.
 
 
+
+
+
+## 🗃️ Database Design
+
+This section outlines the key entities in our Airbnb Clone project and their relationships. The database is designed to store and manage users, listings, bookings, payments, and reviews efficiently.
+
+### 1. Users
+- **Fields**:
+  - `id`: Unique identifier
+  - `username`: User’s login name
+  - `email`: User’s email address
+  - `password`: Hashed password
+  - `is_host`: Boolean indicating if the user can post properties
+- **Relationships**:
+  - A user can have multiple properties (if they are a host)
+  - A user can make multiple bookings
+  - A user can write multiple reviews
+
+### 2. Properties
+- **Fields**:
+  - `id`: Unique identifier
+  - `title`: Property name/title
+  - `description`: Detailed info about the property
+  - `location`: Address or city
+  - `price_per_night`: Cost of staying per night
+- **Relationships**:
+  - Each property belongs to a user (host)
+  - A property can have many bookings
+  - A property can have many reviews
+
+### 3. Bookings
+- **Fields**:
+  - `id`: Unique identifier
+  - `user_id`: User who made the booking
+  - `property_id`: Booked property
+  - `start_date`: Booking start date
+  - `end_date`: Booking end date
+- **Relationships**:
+  - A booking belongs to one user
+  - A booking belongs to one property
+
+### 4. Reviews
+- **Fields**:
+  - `id`: Unique identifier
+  - `user_id`: Author of the review
+  - `property_id`: Property being reviewed
+  - `rating`: Numeric rating (e.g., 1 to 5)
+  - `comment`: Text of the review
+- **Relationships**:
+  - A review is written by one user
+  - A review belongs to one property
+
+### 5. Payments
+- **Fields**:
+  - `id`: Unique identifier
+  - `booking_id`: Related booking
+  - `amount`: Total payment amount
+  - `payment_method`: Method used (e.g., card, PayPal)
+  - `status`: Payment status (e.g., pending, completed)
+- **Relationships**:
+  - A payment is linked to one booking
+
+
+
