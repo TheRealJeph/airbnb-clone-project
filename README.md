@@ -39,3 +39,38 @@ In this project, each team member plays a vital role to ensure the successful de
 
 ### 6. API Designer
 - **Responsibilities**: Plans and structures the RESTful API endpoints. Defines how the frontend and backend systems communicate, including data formats, request/response structure, and error handling strategies.
+
+
+
+## 🛠️ Technology Stack
+
+Below is the list of technologies used in this project and their purpose within the Airbnb Clone:
+
+### 1. Django
+- **Purpose**: A high-level Python web framework used to build robust and scalable RESTful APIs quickly and securely.
+
+### 2. Django REST Framework (DRF)
+- **Purpose**: An extension of Django that simplifies the process of building and managing REST APIs, including serialization and authentication.
+
+### 3. PostgreSQL
+- **Purpose**: A powerful, open-source relational database used to store structured data such as users, listings, bookings, and reviews.
+
+### 4. Docker
+- **Purpose**: A containerization tool that packages the application and its dependencies into isolated environments, making it easier to develop, deploy, and run consistently across machines.
+
+### 5. GitHub Actions
+- **Purpose**: Used to automate workflows like testing, linting, and deployment, ensuring continuous integration and delivery (CI/CD).
+
+### 6. GraphQL *(if applicable in your project)*
+- **Purpose**: An API query language that allows clients to request exactly the data they need, reducing over-fetching and under-fetching of data.
+
+### 7. Gunicorn
+- **Purpose**: A Python WSGI HTTP server used to serve the Django application in production environments.
+
+### 8. Nginx
+- **Purpose**: A high-performance web server used as a reverse proxy to handle incoming HTTP requests and serve static files.
+
+### 9. Swagger / Postman
+- **Purpose**: Tools for documenting and testing APIs, allowing developers to understand and interact with endpoints more easily.
+
+
