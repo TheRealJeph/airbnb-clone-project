@@ -168,3 +168,49 @@ All functionality is exposed through a RESTful API. This enables frontend applic
 
 
 
+## 🔐 API Security
+
+Securing the backend APIs is essential to protect user data, maintain trust, and ensure the overall integrity of the system. This project implements several key security measures to safeguard sensitive operations and data.
+
+### 1. Authentication
+We use token-based authentication (such as JWT) to verify the identity of users before allowing access to protected endpoints. This ensures that only verified users can perform actions like booking properties or managing listings.
+
+### 2. Authorization
+Role-based access control is enforced to restrict user actions based on their permissions (e.g., only hosts can manage properties, only guests can make bookings). This prevents unauthorized access to critical features and data.
+
+### 3. Rate Limiting
+Rate limiting is applied to API requests to prevent abuse, spam, and denial-of-service (DoS) attacks. It helps maintain system performance and ensures fair usage for all users.
+
+### 4. Data Validation and Sanitization
+All user input is validated and sanitized to prevent injection attacks and data corruption. This helps protect against common vulnerabilities such as SQL injection or XSS.
+
+### 5. Secure Payment Processing
+Sensitive payment information is never stored directly in our database. Instead, we rely on secure third-party payment processors and ensure that all payment data is transmitted over HTTPS.
+
+### 6. HTTPS Enforcement
+All API traffic is encrypted using HTTPS to protect data in transit from interception or tampering by malicious actors.
+
+---
+
+Implementing these security measures helps protect user privacy, ensure safe transactions, and maintain the reliability and reputation of the platform.
+
+
+
+
+## ⚙️ CI/CD Pipeline
+
+### What is CI/CD?
+CI/CD stands for **Continuous Integration** and **Continuous Deployment/Delivery**. It is a development practice where code changes are automatically tested and deployed to production or staging environments. This process ensures that new features, bug fixes, and updates are delivered quickly and reliably.
+
+### Why It Matters
+Implementing CI/CD pipelines improves code quality, reduces manual errors, and speeds up the development lifecycle. It enables teams to catch bugs early, maintain consistent environments, and deploy updates with confidence. This is especially crucial in collaborative projects like our Airbnb Clone, where multiple developers are working on different parts of the application.
+
+### Tools Used
+- **GitHub Actions**: Automates workflows such as testing, linting, and deploying code after each commit or pull request.
+- **Docker**: Ensures consistent development and production environments through containerization.
+- **Docker Compose**: Manages multi-container applications, like running the web server and database together during testing.
+- **Heroku / AWS / Render** *(optional)*: Platforms used to deploy and host the backend application.
+
+
+
+
