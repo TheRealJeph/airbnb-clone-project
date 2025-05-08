@@ -139,3 +139,32 @@ This section outlines the key entities in our Airbnb Clone project and their rel
 
 
 
+
+
+## 🚀 Feature Breakdown
+
+The Airbnb Clone project includes several key features that replicate the core functionalities of the original Airbnb platform. Each feature is essential in providing a seamless user experience and efficient backend operation.
+
+### 1. User Management
+Users can register, log in, and manage their profiles. Hosts and guests are both managed through the same system, with role-based access to different features like listing properties or making bookings.
+
+### 2. Property Management
+Hosts can create, update, and delete property listings with details such as title, description, location, and pricing. This feature allows properties to be listed and browsed by potential guests.
+
+### 3. Booking System
+Guests can book available properties for selected dates. The system handles reservation creation, prevents double-booking, and connects bookings with both users and properties.
+
+### 4. Review System
+After completing a stay, guests can leave reviews and ratings for properties. This adds credibility to listings and helps other users make informed booking decisions.
+
+### 5. Payment Processing
+Handles secure payment transactions linked to bookings. This includes tracking amounts, statuses, and ensuring each booking is confirmed only after successful payment.
+
+### 6. Authentication & Authorization
+The system ensures that only registered users can access certain features. Hosts and guests are granted permissions based on their roles, protecting sensitive data and maintaining user trust.
+
+### 7. API Integration
+All functionality is exposed through a RESTful API. This enables frontend applications or third-party services to interact seamlessly with the backend.
+
+
+
